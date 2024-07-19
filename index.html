@@ -23,11 +23,11 @@ int horspool_search(char text[], int text_length, char pattern[], int pattern_le
             j++;
         }
         if (j == pattern_length) {
-            return idx - pattern_length + 1; // Pattern found
+            return idx - pattern_length + 1;
         }
         idx += shift_table[(int)text[idx]];
     }
-    return -1; // Pattern not found
+    return -1; 
 }
 
 int main() {
